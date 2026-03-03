@@ -1,7 +1,8 @@
 {
   "name": "HVAC Service Report",
   "short_name": "HVAC Report",
-  "start_url": ".",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1e3a5f",
