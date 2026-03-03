@@ -1,0 +1,266 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.system-wrapper {
+  width: 75%;
+  margin-bottom: 16px;
+}
+
+.system-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+  padding-bottom: 60px;
+}
+
+header {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+#jobIdDisplay {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5vw;
+}
+
+section > div,
+section > label,
+section > .yesno-group,
+section > .photo-group {
+  margin-bottom: 18px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 28px; /* more separation */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.yesno-group {
+  margin-bottom: 18px;
+}
+
+.yesno-group p {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.yesno-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;          /* tight spacing between circle + text */
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1e3a5f;
+  box-shadow: 0 0 0 2px rgba(30, 58, 95, 0.1);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+button {
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+button:hover {
+  background-color: #16304d;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#generatePdf {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Equipment Block Styling */
+.equipment-block {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.equipment-block input {
+  margin-top: 4px;
+}
+
+.save-status {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.filename-preview {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 4px;
+  resize: none;
+  min-height: 80px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #1e3a5f;
+}
+
+/* ===========================
+   PHOTO SYSTEM (Non-Intrusive)
+   =========================== */
+
+.photo-group {
+  margin-bottom: 14px;
+}
+
+.photo-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.photo-thumb {
+  position: relative;
+  width: 80px;              /* compact */
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-thumb button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  line-height: 18px;
+}
+
+.photo-thumb button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ============================= */
+/* SIGNATURE PAD */
+/* ============================= */
+
+.signature-block {
+  margin-bottom: 20px;
+}
+
+.signature-canvas {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  touch-action: none;
+}
+
+.clear-signature-btn {
+  margin-top: 6px;
+  background-color: #888;
+}
+
+.clear-signature-btn:hover {
+  background-color: #666;
+}
